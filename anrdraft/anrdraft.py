@@ -32,10 +32,10 @@ else:
         VERIFICATION_TOKEN = secrets['verification_token']
         SENTRY_DSN = secrets['sentry_dsn']
 
-sentry_sdk.init(
-    dsn=SENTRY_DSN,
-    integrations=[FlaskIntegration()]
-)
+#sentry_sdk.init(
+#    dsn=SENTRY_DSN,
+#    integrations=[FlaskIntegration()]
+#)
 
 client = slack.WebClient(token=API_TOKEN)
 
